@@ -8,7 +8,6 @@ public class End : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")) {
             victoryText.gameObject.SetActive(true);
-            Time.timeScale = 0;
 
             Invoke("ExitApp", 3f);
         }
